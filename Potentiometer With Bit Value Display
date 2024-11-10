@@ -1,0 +1,13 @@
+//The goal is to read the value of the potentiometer and display the raw bitvalue. Main theme is analogRead and Serial.print(ln)
+void setup() {
+  // start serial communication 
+Serial.begin(9600);
+}
+
+void loop() {
+  // Set the Bitvalue = A0
+int bitvalue = analogRead(A0);
+//Print and display Bitvalue =
+Serial.print("Bitvalue = ");
+Serial.println(bitvalue);
+}
